@@ -57,6 +57,9 @@ public class MovieSpecification implements Specification<Movie> {
 			} else if (criteria.getOperation().equals(SearchOperation.NOT_IN)) {
 				predicates.add(builder.not(root.get(criteria.getKey())).in(criteria.getValue()));
 			}
+			else {
+				predicates.add(builder.)
+			}
 		}
 
 		return builder.and(predicates.toArray(new Predicate[0]));
